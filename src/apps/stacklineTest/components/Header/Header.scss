@@ -1,0 +1,14 @@
+.ant-layout-header {
+    position: fixed !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    background: #fff !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 2px 2px 0 rgba(0, 0, 0, 0.04);
+
+    .logo {
+        height: 30px;
+        margin-left: 25px;
+    }
+}
+

@@ -1,0 +1,76 @@
+
+.ant-layout-sider {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 20px;
+    top: 125px;
+    background: #fff;
+    width: 320px !important;
+    max-width: 400px !important;
+    min-width: 150px !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0.1, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #fff !important;
+}
+
+.ant-menu-item span {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #A4AFBF;
+    margin-left: 10px;
+}
+
+.ant-menu-item-selected span:nth-child(2) {
+    color: black !important;
+    font-weight: bold;
+}
+
+.ant-menu-item-selected span:nth-child(1) {
+    color: black !important;
+    font-weight: bold;
+    color: #1890ff !important;
+}
+
+.ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+    font-size: 20px !important;
+}
+.ant-menu-item {
+    font-size: 15px;
+}
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+    border-right: 0 !important;
+}
+
+.ant-card-bordered {
+    border: 0 !important;
+    margin: 10px auto;
+}
+
+.ant-card-meta-title {
+    text-align: center;
+}
+
+.ant-card-meta-detail {
+    overflow: visible;
+}
+
+.ant-card-meta-description {
+    margin-left: -30px;
+    width: 150%;
+}
+
+.tagWrap {
+    height: 110px;
+    border-top: 0.5px solid #F6F7F9;
+    border-bottom: 0.5px solid #F6F7F9;
+    padding: 10px 20px;
+}
+
+.spinWrap {
+    margin-top: 50px;
+}

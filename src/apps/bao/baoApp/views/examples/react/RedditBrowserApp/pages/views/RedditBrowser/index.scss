@@ -1,0 +1,56 @@
+#root {
+    height: 100%;
+}
+.ant-layout {
+    height: 100%;
+    background: #fff;
+    .ant-layout-header {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .contenWrap {
+        height: 100%;
+        width: 96%;
+        margin: 0 auto;
+        padding: 20px;
+        // overflow: scroll;
+    }
+    
+    .ant-layout-footer {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+.tableHeader {
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.ant-table-wrapper {
+    border-style: groove;
+}
+
+.subredditList {
+    overflow: scroll;
+    padding: 20px;
+}
+
+.postList {
+    padding: 20px;
+    overflow: scroll;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.postDetails {
+    padding: 20px;
+    overflow: scroll;
+}
+
+
+

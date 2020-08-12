@@ -1,0 +1,98 @@
+.calendar_wrap {
+    width: 400px;
+    border: 2px solid #262;
+    margin: 20px auto;
+}
+
+.calendar_header {
+    background: #262;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#currentDate {
+    color: white;
+    font-weight: bold;
+}
+
+#pre {
+    border-top: 8px solid transparent;
+    border-right: 8px solid white;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    cursor: pointer;
+}
+
+#next {
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid white;
+    cursor: pointer;
+}
+
+#pre:hover {
+    border-right: 8px solid #ca3;
+}
+
+#next:hover {
+    border-left: 8px solid #ca3;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    font-weight: bold;
+}
+
+#calendar_day {
+    overflow: hidden;
+    list-style: none;
+    background: #ca3;
+}
+
+#calendar_day>li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #262;
+}
+
+.today {
+    color: white;
+    background: #ca3;
+    cursor: pointer;
+}
+
+#calendar_item {
+    overflow: hidden;
+    list-style: none;
+}
+
+#calendar_item>li {
+    float: left;
+    width: 46px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid white;
+    line-height: 40px;
+    text-align: center;
+}
+
+#calendar_item>.hover:hover {
+    color: white;
+    background: #262;
+    cursor: pointer;
+}
+
+.form_wrap {
+    width: 800px;
+    height: 300px;
+    border: 2px solid #262;
+    margin: 20px auto;
+}

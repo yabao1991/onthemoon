@@ -1,0 +1,65 @@
+
+Lib: antd, d3
+
+Main color: #2f54eb #fff566 #ff7875
+
+color: https://ant.design/docs/spec/colors-cn
+
+icon: https://ant.design/components/icon-cn/
+
+
+Dev steps:
+
+1. Add Redux wrap
+
+install Redux 
+https://www.npmjs.com/package/redux
+```sh
+npm install --save redux
+npm install --save react-redux
+npm install --save-dev redux-devtools
+```
+
+https://www.npmjs.com/package/redux-devtools-extension
+```sh
+npm install --save redux-devtools-extension
+```
+
+https://www.npmjs.com/package/redux-thunk
+```sh
+npm install --save redux-thunk
+```
+https://www.npmjs.com/package/axios
+```sh
+npm install axios
+```
+
+https://www.npmjs.com/package/react-toastify
+```sh
+npm install --save react-toastify
+```
+
+npm install react-router-dom
+
+2. yarn add antd
+修改 src/App.css，在文件顶部引入 antd/dist/antd.css。
+@import '~antd/dist/antd.css';
+
+yarn add node-sass
+
+3. Add style wrap
+https://ant.design/components/icon-cn
+npm install --save @ant-design/icons
+
+
+https://www.npmjs.com/package/react-responsive
+npm install react-responsive --save
+
+4. https://momentjs.com/docs/
+npm install moment
+
+5. https://bizcharts.net/product/bizcharts/category/12/page/7
+npm install bizcharts --save
+
+6. https://www.npmjs.com/package/react-responsive
+npm install react-responsive --save

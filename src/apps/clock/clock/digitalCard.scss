@@ -1,0 +1,137 @@
+.digitalCard {
+  display: inline-block;
+  position: relative;
+  margin: 0 4px;
+  width: 80px;
+  height: 150px;
+  line-height: 150px;
+  border: solid 1px #0b2265;
+  border-radius: 10px;
+  background: white;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+
+  .digital:before,
+  .digital:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #0b2265;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+    
+  .digital:before {
+    top: 0;
+    bottom: 50%;
+    border-radius: 10px 10px 0 0;
+  }
+    
+  .digital:after {
+    top: 50%;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    line-height: 0;
+  }
+
+  
+}
+
+.down {
+  & .front:before {
+    z-index: 3;
+  }
+  & .back:after {
+    z-index: 2;
+    transform-origin: 50% 0%;
+    transform: perspective(160px) rotateX(180deg);
+  }
+
+  & .front:after,
+  & .back:before {
+    z-index: 1;
+  }
+  
+  &.go .front:before {
+    transform-origin: 50% 100%;
+    animation: frontFlipDown 0.6s ease-in-out both;
+    box-shadow: 0 -2px 6px rgba(255, 255, 255, 0.3);
+    backface-visibility: hidden;
+  }
+
+  &.go .back:after {
+    animation: backFlipDown 0.6s ease-in-out both;
+  }
+}
+  
+  @keyframes frontFlipDown {
+    0% {
+      transform: perspective(160px) rotateX(0deg);
+    }
+  
+    100% {
+      transform: perspective(160px) rotateX(-180deg);
+    }
+  }
+  
+  @keyframes backFlipDown {
+    0% {
+      transform: perspective(160px) rotateX(180deg);
+    }
+  
+    100% {
+      transform: perspective(160px) rotateX(0deg);
+    }
+  }
+  
+  .digitalCard .number0:before,
+  .digitalCard .number0:after {
+    content: '0';
+  }
+  
+  .digitalCard .number1:before,
+  .digitalCard .number1:after {
+    content: '1';
+  }
+  
+  .digitalCard .number2:before,
+  .digitalCard .number2:after {
+    content: '2';
+  }
+  
+  .digitalCard .number3:before,
+  .digitalCard .number3:after {
+    content: '3';
+  }
+  
+  .digitalCard .number4:before,
+  .digitalCard .number4:after {
+    content: '4';
+  }
+  
+  .digitalCard .number5:before,
+  .digitalCard .number5:after {
+    content: '5';
+  }
+  
+  .digitalCard .number6:before,
+  .digitalCard .number6:after {
+    content: '6';
+  }
+  
+  .digitalCard .number7:before,
+  .digitalCard .number7:after {
+    content: '7';
+  }
+  
+  .digitalCard .number8:before,
+  .digitalCard .number8:after {
+    content: '8';
+  }
+  
+  .digitalCard .number9:before,
+  .digitalCard .number9:after {
+    content: '9';
+  }
